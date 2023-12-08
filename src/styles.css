@@ -1,0 +1,519 @@
+@font-face {
+  font-family: 'SharpSans';
+  src: url('https://ik.imagekit.io/026k2i7ys/fonts/SharpSans.woff?updatedAt=1701612425934') format('woff');
+}
+
+@font-face {
+  font-family: 'SharpSansItalic';
+  src: url('https://ik.imagekit.io/026k2i7ys/fonts/Sharp%20Sans%20Italic.woff?updatedAt=1701612490087') format('woff');
+}
+
+@font-face {
+  font-family: 'SharpSansMedium';
+  src: url('https://ik.imagekit.io/026k2i7ys/fonts/Sharp%20Sans%20Medium.woff?updatedAt=1701612453253') format('woff');
+}
+
+@font-face {
+  font-family: 'SharpSansExtraBoldItalic';
+  src: url('https://ik.imagekit.io/026k2i7ys/fonts/Sharp%20Sans%20ExtraBold%20Italic.woff?updatedAt=1701612440572') format('woff');
+}
+
+@font-face {
+  font-family: 'SharpSansExtraBold';
+  src: url('https://ik.imagekit.io/026k2i7ys/fonts/Sharp%20Sans%20Extrabold.woff?updatedAt=1701612435101') format('woff');
+}
+
+@font-face {
+  font-family: 'SharpSansLight';
+  src: url('https://ik.imagekit.io/026k2i7ys/fonts/Sharp%20Sans%20Light.woff?updatedAt=1701612432844') format('woff');
+}
+
+@font-face {
+  font-family: 'SharpSansLightItalic';
+  src: url('https://ik.imagekit.io/026k2i7ys/fonts/Sharp%20Sans%20Light%20Italic.woff?updatedAt=1701612432044') format('woff');
+}
+
+@font-face {
+  font-family: 'SharpSansSemiBoldItalic';
+  src: url('https://ik.imagekit.io/026k2i7ys/fonts/Sharp%20Sans%20Semibold%20Italic.woff?updatedAt=1701612430860') format('woff');
+}
+
+@font-face {
+  font-family: 'SharpSansSemiBold';
+  src: url('https://ik.imagekit.io/026k2i7ys/fonts/Sharp%20Sans%20Semibold.woff?updatedAt=1701612513730') format('woff');
+}
+
+@font-face {
+  font-family: 'SharpSansBoldItalic';
+  src: url('https://ik.imagekit.io/026k2i7ys/fonts/Sharp%20Sans%20Bold%20Italic.woff?updatedAt=1701612429444') format('woff');
+}
+
+@font-face {
+  font-family: 'SharpSansBold';
+  src: url('https://ik.imagekit.io/026k2i7ys/fonts/SharpSansBold.woff?updatedAt=1701674171934') format('woff');
+}
+
+@font-face {
+  font-family: 'SharpSansMediumItalic';
+  src: url('https://ik.imagekit.io/026k2i7ys/fonts/Sharp%20Sans%20Medium%20Italic.woff?updatedAt=1701612428363') format('woff');
+}
+
+@font-face {
+  font-family: 'RocGroteskBold';
+  src: url('https://ik.imagekit.io/026k2i7ys/fonts/FONTSPRINGDEMO-RocGroteskBold.woff?updatedAt=1701612426689') format('woff');
+}
+
+*{
+  font-family: SharpSansSemiBold;
+}
+
+body{
+  background-color: #FEE5C8;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: SharpSans;
+  /* overflow: hidden; */
+}
+.outline-div{
+  border: 1px solid #FEBD72;
+  width: 100%;
+  height: 100vh;
+  margin: 10px;
+  border-radius: 30px;
+}
+
+.app-name-div{
+  display: flex;
+  justify-content: left;
+}
+
+.app-name{
+  font-family: "RocGroteskBold";
+  margin-left: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .app-name{
+    font-size: 30px;
+    
+  }
+
+  .app-name-div{
+    justify-content: center;
+  }
+}
+
+.main-card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-card-div{
+  border-radius: 30px;
+  background-color: #FFD7A8;
+  width: 810px;
+  height: 460px;
+  box-shadow: 0px 16px 58.20000076293945px -34px rgba(0, 0, 0, 0.69);
+}
+
+@media only screen and (max-width: 600px) {
+  .main-card-div{
+    margin-top: 20px;
+    width: 340px;
+    height: 500px;
+  }
+
+  .user-id-container{
+    margin-top: 10px;
+  }
+
+  .your-unique-id{
+    font-size: 12px;
+  }
+
+  .your-id-label{
+    font-size: 12px;
+  }
+}
+
+.user-id-container{
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 15px 0 ; 
+}
+
+.your-id-label{
+  display: inline-block;
+  font-family: SharpSansBold;
+  color: #333333;
+  margin: 0 5px;
+}
+
+.your-unique-id{
+  display: inline-block;
+  font-family: SharpSansExtraBold;
+  color: #000;
+}
+
+.copy-svg-div{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.copy-svg{
+  width: 20px;
+  cursor: pointer;
+  vertical-align: middle;
+  padding-bottom: 7px;
+}
+
+.input-bar-div{
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.connect-button-div{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.input-section-div{
+  margin-top: 30px;
+}
+
+.conn-label{
+  font-family: SharpSansBold;
+  color: #333333;
+  margin-left: 5px;
+}
+
+.id-input-bar{
+  font-family: SharpSansBold;
+  padding: 10px 10px 10px 15px;
+  vertical-align: middle;
+  border: 1.7px solid #FEBD72;
+  background-color: #FEE5C8;
+  border-radius: 12px;
+  width: 450px;
+}
+
+.id-input-bar:hover{
+  cursor: text;
+}
+
+.id-input-bar:focus{
+  outline: none;
+}
+
+.connect-button{
+  padding: 7px 20px 7px 20px;
+  border: 1px solid #684E30;
+  border-radius: 10px;
+  background-color: #FF9B28;
+  font-family: SharpSansExtraBold;
+  font-size: 18px;
+}
+
+.connect-button:hover{
+  cursor: pointer;
+}
+
+.connect-button:focus{
+  outline: none;
+}
+
+.conn-status{
+  font-family: SharpSansSemiBold;
+  font-size: 12px;
+  margin-left: 5px;
+  color: #333333;
+}
+
+.sprint-span{
+  font-family: SharpSansSemiBoldItalic;;
+}
+
+.conn-status-div{
+  margin-top: 15px;
+}
+
+.separation-line-div{
+  display: flex;
+  justify-content: center;
+
+}
+
+.separation-line{
+  width: 500px;
+  border: 0.7px rgba(180.62, 165.95, 149.02, 0.56) solid;
+}
+
+.files-container{
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.copy-status-box {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  display: none; /* Initially hidden */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.copy-status-box.show {
+  display: block;
+  opacity: 1;
+  animation: slide-bottom 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) both;
+}
+
+.copy-status-box.outro {
+  animation: slide-top 0.5s cubic-bezier(0.860, 0.000, 0.070, 1.000) both;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.MenuClosed {
+  width: 100%; /* Use 100% of the viewport width */
+  height: 100vh; /* Use 100% of the viewport height */
+  position: relative;
+  background: white;
+}
+
+@media (max-width: 1080px) {
+  .MenuClosed {
+    font-size: 80%; /* Decrease font size for smaller screens */
+  }
+
+  /* Add more styles for smaller screens if needed */
+}
+
+.Rectangle1 {
+  width: 1920px;
+  height: 1080px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background: #FEE5C8;
+}
+
+.Rectangle2 {
+  width: 1874px;
+  height: 1030px;
+  left: 23px;
+  top: 25px;
+  position: absolute;
+  background: #FEE5C8;
+  border-radius: 30px;
+  border: 1px #FEBD72 solid;
+}
+
+.Sprintora {
+  width: 330px;
+  height: 83px;
+  left: 162px;
+  top: 57px;
+  position: absolute;
+  color: black;
+  font-size: 56px;
+  font-family: 'FONTSPRING DEMO - Roc Grotesk';
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.MainCard {
+  width: 1128px;
+  height: 700px;
+  left: 396px;
+  top: 190px;
+  position: absolute;
+  background: #FFD7A8;
+  box-shadow: 0px 16px 58.20000076293945px -34px rgba(0, 0, 0, 0.69);
+  border-radius: 50px;
+}
+
+.UserIdDiv {
+  width: 932px;
+  height: 43px;
+  left: 515px;
+  top: 298px;
+  position: absolute;
+}
+
+.Copy {
+  width: 40px;
+  height: 40px;
+  padding-left: 7.50px;
+  padding-right: 7.50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  left: 892px;
+  top: 2px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+}
+
+.Vector {
+  width: 25px;
+  height: 30px;
+  background: #212121;
+}
+
+.YourId {
+  width: 101px;
+  height: 41px;
+  left: 0;
+  top: 1px;
+  position: absolute;
+  color: #333333;
+  font-size: 26px;
+  font-family: 'Sharp Sans';
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.Abcdefgh1235678ijklmn90opqrstuvwxyz1235678abcde {
+  width: 794px;
+  height: 43px;
+  left: 107px;
+  top: 0px;
+  position: absolute;
+  color: black;
+  font-size: 26px;
+  font-family: 'Sharp Sans';
+  font-weight: 800;
+  word-wrap: break-word;
+}
+
+.ConnInputDiv {
+  width: 914px;
+  height: 174px;
+  left: 515px;
+  top: 405px;
+  position: absolute;
+}
+
+.InputSectionDiv {
+  width: 914px;
+  height: 121px;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.ConnectButtonDiv {
+  width: 158px;
+  height: 55px;
+  left: 756px;
+  top: 66px;
+  position: absolute;
+}
+
