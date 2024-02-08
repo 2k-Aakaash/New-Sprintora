@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/New-Sprintora/static/css/main.f92411cb.css",
+    "main.js": "/New-Sprintora/static/js/main.adbdcd5b.js",
+    "index.html": "/New-Sprintora/index.html",
+    "main.f92411cb.css.map": "/New-Sprintora/static/css/main.f92411cb.css.map",
+    "main.adbdcd5b.js.map": "/New-Sprintora/static/js/main.adbdcd5b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f92411cb.css",
+    "static/js/main.adbdcd5b.js"
+  ]
+}
