@@ -141,7 +141,7 @@ body{
 .user-id-container{
   display: flex;
   justify-content: center;
-  margin: 40px 0 15px 0 ; 
+  margin: 40px 0 15px 0 ;
 }
 
 .your-id-label{
@@ -259,15 +259,16 @@ body{
 
 .copy-status-box {
   position: fixed;
-  top: 10px;
-  left: 50%;
+  top: 25px;
+  left: 42%;
   transform: translateX(-50%);
-  background-color: #ffffff;
+  background-color: #FFD7A8;
   padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  border: 2px solid #FEBD72;
+  font-size: 16px;
   opacity: 0;
-  display: none; /* Initially hidden */
+  display: none;
   transition: opacity 0.5s ease-in-out;
 }
 
@@ -325,13 +326,81 @@ body{
   }
 }
 
+.user-id-container.faded {
+  opacity: 0.7;
+  pointer-events: none;
+}
 
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the alpha channel for the desired opacity */
+  z-index: 999; /* Set a high z-index to make sure it overlays everything */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
+.connection-approval-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #c09666;
+  width: 400px;
+  height: 150px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
+.approval-label {
+  font-size: 18px;
+  font-family: SharpSansExtraBold;
+  margin-bottom: 10px;
+}
 
+.approval-label span{
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
 
+.approval-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.accept-button{
+  background-color: #3a230c;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 18px;
+  font-family: SharpSansExtraBold;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.reject-button {
+  background-color: #fae6cf;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 18px;
+  font-family: SharpSansExtraBold;
+  cursor: pointer;
+  border-radius: 10px;
+}
 
 
 
