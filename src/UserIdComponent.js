@@ -376,15 +376,33 @@ const UserIdComponent = () => {
                 </button>
               </div>
               <div className="conn-status-div" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(connectionStatus) }}></div>
-              <button onClick={handleSendData}>Send Data</button>
+              // <button onClick={handleSendData}>Send Data</button>
+              <div className="separation-line-div">
+                <div className="separation-line"></div>
+              </div>
+              {/* <button onClick={handleSendData}>Send Data</button> */}
+              <div className="message-container">
               <div className="text-input-div">
+                
                 <input
                   type="text"
+                  className="input-bar"
                   placeholder="Type your message..."
                   value={inputMessage}
                   onChange={(e) => setInputMessage(e.target.value)}
                 />
-                <button onClick={handleSendMessage}>Send</button>
+                <button onClick={handleSendMessage} className="send-button">
+                <svg
+                  viewBox="0 0 28 28"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#212121"
+                  width="24px"
+                  height="24px"
+                >
+                  <path d="M3.79,2.77L24.86,12.85C25.48,13.15 25.75,13.89 25.45,14.52C25.33,14.77 25.12,14.98 24.86,15.11L3.79,25.18C3.17,25.48 2.42,25.22 2.12,24.59C1.99,24.32 1.97,24.02 2.04,23.73L4.15,16C4.2,15.8 4.37,15.66 4.57,15.63L14.78,14.25C14.87,14.24 14.94,14.18 14.97,14.1L14.99,14.04C15.01,13.92 14.94,13.81 14.83,13.77L14.78,13.75L4.58,12.37C4.38,12.34 4.22,12.2 4.16,12L2.04,4.23C1.86,3.56 2.26,2.88 2.92,2.69C3.21,2.62 3.52,2.64 3.79,2.77Z"/>
+                </svg>
+                </button>
+                </div>
               </div>
               <div className="received-messages-container">
                 <h2>Received Messages</h2>
