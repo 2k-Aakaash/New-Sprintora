@@ -73,7 +73,7 @@ body{
   padding: 0;
   box-sizing: border-box;
   font-family: SharpSans;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 .outline-div{
   border: 1px solid #FEBD72;
@@ -402,9 +402,36 @@ body{
   border-radius: 10px;
 }
 
+  .input-bar{
+    padding: 10px;
+    border: 1.5px solid #FEBD72;
+    border-radius: 12px;
+    outline: none;
+    background-color: #FEE5C8;
+    outline-color: #FEBD72;
+    width: 300px;
+  }
 
+  .send-button{
+    position: absolute;
+    right: -15px; 
+    top: 7px;
+    border: 0;
+    background-color: #FEE5C8;
+    outline: none;
+    z-index: 2;
+    cursor: pointer;
+  }
 
+  .text-input-div{
+    position: relative;
+    width: 300px;
+  }
 
+  .message-container{
+    display: flex;
+    justify-content: center;
+  }
 
 
 
